@@ -7,12 +7,11 @@
 
 fn main() {
    
-  let fruit = "banana";
+  let found_toy = Some("Teddy bear");
 
-  match fruit {
-    "apple" => println!("put inside apple box"),
-    "banana" => println!("put it inside banana box"),
-    _=> println!("I dont know where this goes"),
+  match found_toy {
+    Some(toy) => println!("Yay, I found a {}!", toy),
+    None => println!("oh no, the box is empty"),
   }
 
 }
